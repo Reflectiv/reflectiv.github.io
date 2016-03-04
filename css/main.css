@@ -206,7 +206,8 @@ header .logo{
 
 header nav{
     float: right;
-    margin-top: 57px;
+    margin-top: 40px;
+    margin-right: 40px;
 }
 
 
