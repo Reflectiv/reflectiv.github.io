@@ -760,14 +760,17 @@ hr {
 /* Specific
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-html {
-    overflow: hidden;
-    height: 100%;
-    background: #93de73;
+.center>div ::selection, .center>div ::-moz-selection {
+    background: #43c76c; /* WebKit/Blink Browsers */
+    color: #fff;
 }
+
+a::selection, a::-moz-selection {
+    background: #109439; /* WebKit/Blink Browsers */
+    color: #fff;
+}
+
 body {
-    height: 100%;
-    overflow: auto;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#93de73+0,2cbb9b+100 */
     background: #fff;
     color: #43c76c;
@@ -786,7 +789,7 @@ h1 {
     font-weight: bold;
     text-decoration: none;
     color: #43c76c;
-    margin-top: 50px;
+    margin-top: 0px;
     display: block;
     clear: both;
     font-size: 16px;
@@ -795,9 +798,8 @@ body p {
     color: #888;
     font-size: 20px;
     margin-bottom: 25px;
-    text-align: justify;
+    text-align: left;
     line-height: 36px;
-    max-width: 500px;
 }
 body a {
     color: #888;
@@ -812,6 +814,6 @@ body a:hover {
     border-bottom: 1px solid #43c76c;
 }
 .container > .row {
-    margin: 20% auto;
-    max-width: 600px;
+    margin: 15% auto;
+    max-width: 700px;
 }
